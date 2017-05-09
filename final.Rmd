@@ -1,13 +1,8 @@
 ---
 title: "Textual/Sentiment Analysis"
 output:
-   html_document:
-    theme: united
-    highlight: tango
-    toc: true
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
+   html_document
+
 ---
 
 ```{r include=FALSE, echo = FALSE}
@@ -87,6 +82,11 @@ dtm_td <- tidy(dtm)
 head(dtm_td)
 dtm_td$neighborhood <- total_s[match(dtm_td[['document']], total_s[['row.names']]), 'neighborhood']
 head(dtm_td)
+
+tf_idf <- tdm_td %>%
+  bind_tf_idf(term, document, count)  %>%
+  arrange(desc(tf_idf))
+
 ```
 
 ```{r include=FALSE, echo = FALSE}
