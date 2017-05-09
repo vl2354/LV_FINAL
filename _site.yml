@@ -9,6 +9,8 @@ navbar:
       href: Data.html
     - text: "Exploratory Analysis"
       href: EDA.html
+    - text: "Textual Analysis"
+      href: Text.html
     - text: "Map"
       href: Map.html
     - text: "Conclusion"
