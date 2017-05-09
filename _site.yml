@@ -10,7 +10,7 @@ navbar:
     - text: "Exploratory Analysis"
       href: EDA.html
     - text: "Textual Analysis"
-      href: Text.html
+      href: final.html
     - text: "Map"
       href: Map.html
     - text: "Conclusion"
